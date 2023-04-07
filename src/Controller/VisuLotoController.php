@@ -22,6 +22,9 @@ class VisuLotoController extends AbstractController
     public function importLoto(SymfonyStyle $io): void
     {
         $io->title('Importation des villes');
+
+        $results = $this->readCsvFile();
+        dd()
     }
 
     private function readCsvFile(): Reader 
